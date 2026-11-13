@@ -1,0 +1,16 @@
+{
+  // Static site on Cloudflare Workers (static assets only, no server code).
+  // `pnpm run deploy` = next build (→ out/) + wrangler deploy.
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "gymify",
+  "compatibility_date": "2026-11-10",
+  "routes": [
+    { "pattern": "gymify.pk", "custom_domain": true },
+    { "pattern": "www.gymify.pk", "custom_domain": true }
+  ],
+  "assets": {
+    "directory": "./out",
+    "html_handling": "drop-trailing-slash",
+    "not_found_handling": "404-page"
+  }
+}
