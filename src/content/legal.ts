@@ -1,7 +1,7 @@
 // Copied from the app repo (gym-navigator-front-app/src/constants/legal.ts) — keep the two in sync.
 
 export const SUPPORT_EMAIL = 'support@gymify.pk';
-export const LEGAL_UPDATED = 'October 29, 2026';
+export const LEGAL_UPDATED = 'November 15, 2026';
 
 export type LegalDoc = 'privacy' | 'terms' | 'health';
 
@@ -34,6 +34,7 @@ export const LEGAL: Record<LegalDoc, LegalSection[]> = {
         'Profile and health data you enter: body weight, height, age, sex, goal, activity level, injuries, weight check-ins and body measurements (waist, chest, arm, hips, thigh).',
         'Training data: the equipment in your gym, generated workouts, the sets, reps and weights you log, and your weekly plan.',
         'Steps: your daily step count from your phone\'s motion sensor, used to adjust your calorie budget. Steps are counted on your phone; only the daily total is sent to us.',
+        'App usage: when you open the app, how long you use it and which screens you visit (screen names only, never what you type on them), counted per day. We use it to see which parts help and to improve the app.',
         'Gym photos: if you use "Scan your gym", the photo is sent to our AI provider to detect equipment. We do not store the photo.',
         'Progress photos: saved only on your phone, inside the app. They are never uploaded to us, and deleting the app or your account removes them.',
         'We do not collect your location, contacts, or advertising identifiers, and the app has no ads.',
@@ -67,7 +68,7 @@ export const LEGAL: Record<LegalDoc, LegalSection[]> = {
     {
       heading: 'Deleting your data',
       body: [
-        'You can delete your account at any time in the app: Menu → Account & privacy → Delete account. This permanently removes your profile, workouts, logs, plans, check-ins, measurements and steps straight away, and the progress photos on that phone.',
+        'You can delete your account at any time in the app: Menu → Account & privacy → Delete account. This permanently removes your profile, workouts, logs, plans, check-ins, measurements, steps and app usage straight away, and the progress photos on that phone.',
         `If you can no longer log in, email ${SUPPORT_EMAIL} from your account email and we will delete it within 30 days.`,
         'We keep nothing after deletion, except that copies in our nightly database backups are removed automatically within 30 days.',
       ],
